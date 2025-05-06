@@ -57,6 +57,9 @@ const queryAnswerStorage: QueryAnswer[] = [];
 
 const SubmitStorage: Array<{ query: string; answer: any }> = [];
 
+app.get("/", (req, res) => {
+  res.send("Diagnosis API is alive.");
+});
 
 app.post("/query", async (req, res) => {
   const userQuery = req.body.query;
