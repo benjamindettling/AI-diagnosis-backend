@@ -11,7 +11,9 @@ dotenv.config();
 // Creates the express app, do not change
 const app = express();
 
-// Middleware to parse JSON request bodies
+// Midd
+// 
+// eware to parse JSON request bodies
 app.use(cors());
 app.use(express.json());
 
@@ -220,7 +222,7 @@ app.get("/hello", async function (_req, res) {
 
 
 app.listen(3001, () => {
-  console.log("Backend is running on http://localhost:3001");
+  console.log("Backend is running");
 });
 
 
